@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <form action="submit.html" method="get">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <br>
+        <div>
+          <label for="full_name">Full Name</label>
+          <input
+            id="full_name"
+            name="full_name"
+            type="text"
+            placeholder="FirstName_LastName"
+            pattern="^[A-Za-z]+_[A-Za-z]+$"
+            title="Use only letters in FirstName_LastName format"
+            required
+          />
+        </div>
+        <br>
+        <div>
+          <label for="about_yourself">About Yourself</label>
+          <textarea
+            id="about_yourself"
+            name="about_yourself"
+            rows="5"
+            cols="50"
+            placeholder="Write about yourself"
+          ></textarea>
+        </div>
+        <br>
+        <div>
+          <label for="email">Email Address</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="xyz@gmail.com"
+            required
+          />
+        </div>
+        <br>
+        <div>
+          <label for="password">Password</label>
+          <input
+            id="password"
+            name="password"
+            type="password"
+            minlength="8"
+            required
+          />
+        </div>
+        <br>
+        <div>
+          <label for="phone_number">Phone Number</label>
+          <input
+            id="phone_number"
+            name="phone_number"
+            type="tel"
+            placeholder="10 digit number"
+            pattern="^[0-9]{10}$"
+            minlength="10"
+            maxlength="10"
+            title="Enter exactly 10 digits"
+            required
+          />
+        </div>
+        <br>
+        <div>
+          <label for="website">Website</label>
+          <input id="website" name="website" type="url" placeholder="https://example.com" />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Skills & Preferences</legend>
+        <br>
+        <div>
+          <label for="skill_html">HTML</label>
+          <input id="skill_html" name="skills" type="checkbox" value="HTML" checked />
+
+          <label for="skill_css">CSS</label>
+          <input id="skill_css" name="skills" type="checkbox" value="CSS" />
+
+          <label for="skill_js">JavaScript</label>
+          <input id="skill_js" name="skills" type="checkbox" value="JavaScript" />
+        </div>
+        <br>
+        <div>
+          <label for="gender_male">Male</label>
+          <input id="gender_male" name="gender" type="radio" value="Male" checked />
+
+          <label for="gender_female">Female</label>
+          <input id="gender_female" name="gender" type="radio" value="Female" />
+        </div>
+        <br>
+        <div>
+          <label for="preferred_color">Preferred Color</label>
+          <input id="preferred_color" name="preferred_color" type="color" value="#1e90ff" required />
+        </div>
+        <br>
+        <div>
+          <label for="experience_level">Experience Level (0-10)</label>
+          <input id="experience_level" name="experience_level" type="range" min="0" max="10" step="2" />
+        </div>
+        <br>
+        <div>
+          <label for="search_interest">Search Interest</label>
+          <input id="search_interest" name="search_interest" type="search" placeholder="Search..." />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Date & Time Inputs</legend>
+        <br>
+        <div>
+          <label for="dob">Date of Birth</label>
+          <input id="dob" name="dob" type="date" max="2005-12-31" />
+        </div>
+        <br>
+        <div>
+          <label for="available_time">Available Time</label>
+          <input id="available_time" name="available_time" type="time" min="09:00" max="18:30" />
+        </div>
+        <br>
+        <div>
+          <label for="joining_month">Joining Month</label>
+          <input id="joining_month" name="joining_month" type="month" value="2026-01" />
+        </div>
+        <br>
+        <div>
+          <label for="joining_date">Joining Date</label>
+          <input id="joining_date" name="joining_date" type="date" value="2026-01-09" />
+        </div>
+        <br>
+        <div>
+          <label for="training_week">Training Week</label>
+          <input id="training_week" name="training_week" type="week" value="2026-W07" readonly />
+        </div>
+        <br>
+        <div>
+          <label for="interview_slot">Interview Slot</label>
+          <select id="interview_slot" name="interview_slot">
+            <option value="09-10">9:00 AM to 10:00 AM</option>
+            <option value="11-12">11:00 AM to 12:00 PM</option>
+            <option value="14-15">2:00 PM to 3:00 PM</option>
+            <option value="16-17">4:00 PM to 5:00 PM</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Selection & Upload</legend>
+        <br>
+        <div>
+          <label for="technology">Technology</label>
+          <select id="technology" name="technology">
+            <option value=".Net">.Net</option>
+            <option value="Angular">Angular</option>
+            <option value="Java">Java</option>
+            <option value="ReactJS">ReactJS</option>
+            <option value="QA">QA</option>
+          </select>
+        </div>
+        <br>
+        <div>
+          <label for="resume">Resume Upload (PDF)</label>
+          <input id="resume" name="resume" type="file" accept=".pdf,application/pdf" />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Hidden Field</legend>
+        <div>
+          <label for="user_id">Dummy User ID</label>
+          <input id="user_id" name="user_id" type="hidden" value="USER12345" />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Buttons</legend>
+        <br>
+        <div>
+          <label for="submit_btn">Submit</label>
+          <input id="submit_btn" name="submit_btn" type="submit" value="Submit" />
+        </div>
+        <br>
+        <div>
+          <label for="reset_btn">Reset</label>
+          <input id="reset_btn" name="reset_btn" type="reset" value="Reset" />
+        </div>
+        <br>
+        <div>
+          <label for="plain_btn">Button</label>
+          <input id="plain_btn" name="plain_btn" type="button" value="Button" />
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
