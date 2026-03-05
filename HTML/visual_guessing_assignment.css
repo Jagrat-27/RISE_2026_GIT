@@ -1,0 +1,49 @@
+body {
+    font-family: "Times New Roman", serif;
+    background: linear-gradient(to bottom, #9fc2d3, #b8c8d1);
+}
+
+#introduction {
+    font-style: italic;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#p1{
+    color: red;
+    letter-spacing: 6px;
+    text-indent: 20px;
+    text-transform: lowercase;
+    text-shadow: 2px 2px 3px gray;
+    text-decoration: overline;
+}
+
+div {
+    width: 230px;
+    height: 110px;
+    border: 2px solid black;
+    margin-bottom: 20px;
+    padding: 8px;
+    background-color: #d6e3ea;
+}
+
+
+div:nth-of-type(1) {
+    overflow: visible;
+}
+
+/* 2nd Box - overflow hidden */
+div:nth-of-type(2) {
+    overflow: hidden;
+}
+
+/* 3rd Box - overflow scroll */
+div:nth-of-type(3) {
+    overflow: scroll;
+}
+
+/* 4th Box - overflow auto */
+div:nth-of-type(4) {
+    overflow: auto;
+}
