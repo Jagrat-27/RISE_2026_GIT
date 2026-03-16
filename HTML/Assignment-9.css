@@ -1,0 +1,63 @@
+
+
+body {
+    background-image: url("images/nature.jpg");
+    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(216, 216, 216, 0.4)),
+        url("images/nature.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.box4 {
+    width: 60px;
+    height: 140px;
+    background-color: rgb(199, 211, 146);
+    text-align: "Box 4";
+
+}
+
+.box2 {
+    width: 100px;
+    height: 140px;
+    background-color: rgb(169, 144, 203);
+    transform: rotate(90deg);
+    position: absolute;
+    left: 500px;
+    top: 200px;
+
+}
+
+.box5 {
+    width: 140px;
+    height: 140px;
+    background-color: rgb(159, 172, 207);
+    position: sticky;
+    left: 180px;
+
+}
+
+.box1 {
+    width: 140px;
+    height: 90px;
+    background-color: rgb(179, 52, 153);
+    position: absolute;
+    transform: skew(45deg);
+    top: 10px;
+    left: 500px;
+}
+
+.box3 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(235, 235, 158);
+    position: fixed;
+    transform: scaleX(2);
+    left: 550px;
+    top: 350px
+}
+
+.box3:hover {
+    transform: scale(1);
+}

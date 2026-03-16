@@ -1,0 +1,69 @@
+#intro::first-letter {
+    font-size: 50px;
+    color: red;
+}
+
+#light::first-line {
+    background-color: rgb(237, 237, 153);
+}
+
+#note::before {
+    content: "Note :";
+    color: red;
+}
+
+#Copyright::before {
+    content: "All rights reseved © 2026";
+}
+
+#List li:nth-child(Even) {
+    background-color: rgb(177, 177, 223);
+}
+
+#List li:nth-child(odd) {
+    background-color: rgba(208, 208, 232, 0.813);
+}
+
+#firstLink {
+    color: red;
+}
+
+a[href^="https"] {
+    font-weight: bold;
+}
+
+#firstLink:hover {
+    color: black;
+}
+
+img[src$=".jpg"] {
+    border: 2px solid red;
+}
+
+.img1 {
+    height: 200px;
+
+}
+
+.img2 {
+    height: 200px;
+}
+
+#input {
+    background-color: bisque;
+}
+
+.container p {
+    color: blueviolet
+}
+
+#part {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: bisque;
+    color: chocolate;
+}
+
+.Container2 {
+    color: brown;
+
+}

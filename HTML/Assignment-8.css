@@ -1,0 +1,85 @@
+/* ===== Global / Body ===== */
+body {
+    background: linear-gradient(135deg, #a8d8ea 0%, #cce8f0 50%, #e0f4fa 100%);
+    font-family: 'Georgia', serif;
+    margin: 20px 40px;
+    min-height: 100vh;
+}
+
+/* ===== H1 – plain bold heading ===== */
+h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+/* ===== H2 – italic, small-caps, custom font ===== */
+h2 {
+    font-family: 'Palatino Linotype', 'Palatino', 'Book Antiqua', serif;
+    font-style: italic;
+    font-variant: small-caps;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #000;
+    border-bottom: 1.5px solid #888;
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+}
+
+/* ===== P (first one) – spaced-out red text, uppercase ===== */
+p:first-of-type {
+    font-family: 'Courier New', Courier, monospace;
+    color: #cc0000;
+    letter-spacing: 0.55em;
+    text-transform: lowercase;
+    font-size: 0.78rem;
+    margin-bottom: 20px;
+    line-height: 2;
+}
+
+/* ===== H3 – Overflow Demonstration heading ===== */
+h3 {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000;
+    margin-top: 10px;
+    margin-bottom: 12px;
+}
+
+/* ===== Shared box styles for overflow paragraphs ===== */
+p:not(:first-of-type) {
+    font-family: 'Georgia', serif;
+    font-size: 0.82rem;
+    color: #000;
+    width: 220px;
+    height: 110px;
+    border: 1px solid #555;
+    padding: 6px 8px;
+    margin-bottom: 14px;
+    box-sizing: border-box;
+    line-height: 1.45;
+    background-color: transparent;
+}
+
+/* Box 1 – overflow: visible (content flows outside) */
+p:nth-of-type(2) {
+    overflow: visible;
+}
+
+/* Box 2 – overflow: hidden (clipped) */
+p:nth-of-type(3) {
+    overflow: hidden;
+}
+
+/* Box 3 – overflow: scroll (scrollbars always visible) */
+p:nth-of-type(4) {
+    overflow: scroll;
+}
+
+/* Box 4 – overflow: auto (scrollbars only when needed) */
+p:nth-of-type(5) {
+    overflow: auto;
+}
